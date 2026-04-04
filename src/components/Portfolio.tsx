@@ -53,9 +53,6 @@ const Portfolio: React.FC = () => {
               >
                 <div className="image-container">
                   <img src={img} alt={`${category.name} ${i + 1}`} />
-                  <div className="image-overlay">
-                    <span>{category.name}</span>
-                  </div>
                 </div>
               </Link>
             ))}
