@@ -1,0 +1,37 @@
+.contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact h1 {
+  color: #d4a574;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-link {
+  color: #d4a574;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    gap: 0.5rem;
+  }
+}
