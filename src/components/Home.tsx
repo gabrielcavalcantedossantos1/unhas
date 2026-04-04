@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const Home: React.FC = () => {
   return (
@@ -11,9 +12,9 @@ const Home: React.FC = () => {
             Designer profissional de unhas, especializada em manicure e nail
             art. Transforme suas unhas com estilo e elegância.
           </p>
-          <a href="#portfolio" className="cta-button">
+          <Link to="/portfolio" className="cta-button">
             Veja meu Portfólio
-          </a>
+          </Link>
           <div className="contact-links">
             <a
               href="https://wa.me/1234567890"

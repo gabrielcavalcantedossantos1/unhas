@@ -15,6 +15,12 @@
   gap: 2rem;
 }
 
+a {
+  font-weight: 900;
+  font-size: medium;
+  margin: 15px auto;
+}
+
 .hero-content {
   flex: 1;
   text-align: left;
