@@ -9,37 +9,58 @@
   margin-bottom: 2rem;
 }
 
+/* LISTA DE CARDS */
+.service-list {
+  display: flex; /* necessário para usar flex properties */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* LINK */
 .service-link {
   text-decoration: none;
   color: inherit;
+  width: 300px; /* largura fixa dos cards */
+  display: flex; /* permite que o card interno ocupe toda altura */
 }
 
+/* CARD */
+.service-item {
+  background: linear-gradient(135deg, #fff, #fdf7f2);
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 100%; /* preenche o link */
+  text-align: center;
+  margin-bottom: 15px;
+  border: none;
+
+  box-shadow: 0 6px 15px rgba(212, 165, 116, 0.2);
+  transition: all 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* ocupa toda altura do link */
+}
+
+/* HOVER */
 .service-link:hover .service-item {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
 }
 
-.service-item {
-  background-color: #f8f8f8;
-  padding: 1.5rem;
-  border-radius: 10px;
-  width: 300px;
-  text-align: center;
-  border: 1px solid #000;
-  margin-bottom: 15px;
-}
-
+/* TEXTO */
 .service-item h3 {
   color: #333;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
 .service-item p {
   color: #666;
   margin-bottom: 1rem;
+  font-weight: 700;
+  flex-grow: 1; /* empurra o preço para baixo */
 }
 
 .price {
@@ -48,9 +69,14 @@
   font-size: 1.2rem;
 }
 
+/* RESPONSIVO */
 @media (max-width: 768px) {
   .service-list {
     flex-direction: column;
     align-items: center;
+  }
+
+  .service-link {
+    width: 90%; /* ocupa quase toda a largura no mobile */
   }
 }
