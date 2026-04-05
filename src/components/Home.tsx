@@ -1,6 +1,8 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaInstagram } from "react-icons/fa";
 
 const Home: React.FC = () => {
   return (
@@ -21,6 +23,7 @@ const Home: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
+              <IoLogoWhatsapp size={20} style={{ marginRight: "8px" }} />
               WhatsApp
             </a>
             <a
@@ -28,6 +31,7 @@ const Home: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
+              <FaInstagram size={20} style={{ marginRight: "8px" }} />
               Instagram
             </a>
           </div>

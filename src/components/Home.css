@@ -15,12 +15,6 @@
   gap: 2rem;
 }
 
-a {
-  font-weight: 900;
-  font-size: medium;
-  margin: 15px auto;
-}
-
 .hero-content {
   flex: 1;
   text-align: left;
@@ -53,6 +47,8 @@ a {
 }
 
 .cta-button {
+  width: 100%;
+  text-align: center;
   display: inline-block;
   background-color: #d4a574;
   color: white;
@@ -61,16 +57,43 @@ a {
   border-radius: 5px;
   margin-bottom: 1rem;
   transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 800;
 }
 
 .cta-button:hover {
   background-color: #c4a564;
 }
 
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 .contact-links a {
   margin: 0 1rem;
   color: #d4a574;
   text-decoration: none;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-links a {
+    margin: 0.5rem 0;
+    border-bottom: 1px solid #cacc60;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 }
 
 @media (max-width: 768px) {
