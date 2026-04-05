@@ -74,11 +74,49 @@
   margin-top: 1rem;
 }
 
+.insta-icon,
+.whats-icon {
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.whats-icon {
+  color: #25d366;
+}
+
+.insta-icon {
+  color: #e1306c; 
+}
+
 .contact-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 1rem;
-  color: #d4a574;
   text-decoration: none;
   font-size: 1.2rem;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.contact-links a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.contact-links .whats {
+  color: #25d366;
+}
+
+.contact-links .whats:hover {
+  color: #128c7e;
+}
+
+.contact-links .insta {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 768px) {

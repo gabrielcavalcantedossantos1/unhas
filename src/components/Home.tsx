@@ -19,19 +19,21 @@ const Home: React.FC = () => {
           </Link>
           <div className="contact-links">
             <a
+              className="whats"
               href="https://wa.me/1234567890"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IoLogoWhatsapp size={20} style={{ marginRight: "8px" }} />
+              <IoLogoWhatsapp className="whats-icon" size={23} />
               WhatsApp
             </a>
             <a
+              className="insta"
               href="https://instagram.com/seu_instagram"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram size={20} style={{ marginRight: "8px" }} />
+              <FaInstagram className="insta-icon" size={23} />
               Instagram
             </a>
           </div>
